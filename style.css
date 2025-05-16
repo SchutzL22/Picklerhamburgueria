@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Georgia, serif;
+    background-color: #FFF8DC;
+    color: #333;
+    min-height: 100vh;
+    padding-top: 100px; 
+  }
+  
+  /* Cabeçalho */
+  .barra_superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #228B22;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+  }
+    .barra_inferior {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #FFA500;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+  }
+  .logo {
+    width: 60px;
+    margin-right: 1rem;
+  }
+  .barra_superior2 h1 {
+    color: #FFA500;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .slogan {
+    color: #FFF8DC;
+    font-size: 1rem;
+    margin-top: 0.2rem; /* Corrigir distancia absurda do slogan pro titulo */
+  }
+  
+  .barra_superior {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 80px;
+    background-color: #228B22;
+    display: flex;
+    justify-content: space-between;   /* separa left e right */
+    align-items: center;
+    padding: 0 2%;
+    z-index: 1000;
+  }
+  
+  .barra_left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra_texto h1 {
+    color: #FFA500;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .slogan {
+    color: #FFF8DC;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  
+  /* Lado direito do cabeçalho */
+  .barra_right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+    .barra_under {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contato {
+    color: #FFF8DC;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .redes-sociais {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .social-link {
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .social-linkk {
+    color: #228B22;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .social-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Automação que o Davi falou, cria um container de cards */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2%;
+  }
+  
+  /* Card dos hamburguers */
+  .hamburguer-card {
+    background-color: #ED5E03;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburguer-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .detalhes {
+    padding: 0.75rem;
+    background-color: #FFF8DC;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .detalhes h2 {
+    margin-bottom: 0.5rem;
+    color: #228B22;
+  }
+  .detalhes p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  .recomendacao {
+    font-style: italic;
+    color: #555;
+  }
+  .btn-pedir {
+    margin-top: auto;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #228B22;
+    color: #FFF8DC;
+    cursor: pointer;
+    align-self: center;
+    width: 80%;
+  }
+  .btn-pedir:hover {
+    background-color: #ED5E03;
+  }
